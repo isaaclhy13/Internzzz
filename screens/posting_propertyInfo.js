@@ -3,8 +3,6 @@ import {View, Dimensions, Pressable, Text} from 'react-native';
 import {Container, TextInputContainer, CheckBoxContainer, DobContainer} from '../styles/postingStyles.js'
 import RNDateTimePicker from '@react-native-community/datetimepicker';
 
-import Realm from "realm";
-
 
 import {Picker} from '@react-native-picker/picker';
 
@@ -21,11 +19,6 @@ const TEXTINPUTWIDTH = WIDTH*0.85
 const TEXTINPUTSTYLE = {width:TEXTINPUTWIDTH, height:TEXTINPUTHEIGHT, marginTop:TEXTINPUTHEIGHT*0.2, marginBottom:TEXTINPUTHEIGHT*0.2}
 
 const TITLESTYLE = {color:'#4050b5'};
-
-const app = new Realm.App({id: "application-0-uxqfo"});
-
-
-
 
 export default function Posting_PropertyInfo(){
 

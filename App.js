@@ -24,16 +24,13 @@ export default function App() {
 
     <NavigationContainer>
       <UserContext.Provider value={[user, setUser]}>
-      {user ?
+      
       <Tab.Navigator>
         <Tab.Screen name="Posting" component={Posting}/>
         
         <Tab.Screen name="Searching" component={SearchingScreen} />
       </Tab.Navigator>
-      
-      :
-      <LoginScreen/>
-      }
+      s
       </UserContext.Provider>
 
     </NavigationContainer>
